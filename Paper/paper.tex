@@ -1,0 +1,57 @@
+\documentclass[12pt,letterpaper,man]{apa6}
+
+%%%%% General Setup %%%%%
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref} % For in-text references and URLs
+
+%%%%% Bibliography Setup %%%%%
+\usepackage[
+    style=apa,
+    backend=biber,
+    sortcites=true,
+    sorting=nyt,
+%    isbn=false,
+%    url=false,
+%    doi=false,
+%    eprint=false,
+    hyperref=false,
+    backref=false,
+%    firstinits=false,
+]{biblatex}
+\usepackage{csquotes}
+
+\bibliography{ref}
+
+%%%%% Set up Paper %%%%%
+% Not required for this paper since already double spaced
+% \usepackage{setspace}
+% \doublespacing
+
+\title{\large{The Future of Robotics, Labor, and Society}}
+\shorttitle{Future of Robotics, Labor, and Society | Tacescu}
+\author{Alex Tacescu}
+\affiliation{
+    HUA 4900 Robotics, AI, and Ethics \\
+    Worcester Polytechnic Institute
+}
+\date{\today}
+% \abstract{}
+
+%%%%% Document %%%%%
+
+\begin{document}
+    \maketitle
+
+    \input{Sections/1_Intro.tex}
+    % \input{Sections/2_Short.tex}
+    % \input{Sections/3_Mid.tex}
+    % \input{Sections/4_Long.tex}
+    % \input{Sections/5_Conclusion.tex}
+
+    \printbibliography
+    % \bibliography{ref.bib}
+
+\end{document}
