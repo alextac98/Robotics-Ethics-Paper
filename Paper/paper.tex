@@ -1,21 +1,28 @@
-\documentclass[12pt,letterpaper,man]{apa6}
+\documentclass[12pt,letterpaper, man]{apa6}
 
-%%%%% General Setup %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% General Setup %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{setspace}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref} % For in-text references and URLs
 
-%%%%% Bibliography Setup %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Bibliography Setup %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage[
     style=apa,
     backend=biber,
     sortcites=true,
     sorting=nyt,
 %    isbn=false,
-%    url=false,
-%    doi=false,
+   url=true,
+   doi=true,
 %    eprint=false,
     hyperref=false,
     backref=false,
@@ -25,10 +32,12 @@
 
 \bibliography{ref}
 
-%%%%% Set up Paper %%%%%
-% Not required for this paper since already double spaced
-% \usepackage{setspace}
-% \doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Set up Paper %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Set double-spacing (default 2)
+\setstretch{2}
 
 \title{\large{The Future of Robotics, Labor, and Society}}
 \shorttitle{Future of Robotics, Labor, and Society | Tacescu}
@@ -38,9 +47,12 @@
     Worcester Polytechnic Institute
 }
 \date{\today}
-% \abstract{}
+% Abstract not required for my paper
+% \abstract{} 
 
-%%%%% Document %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Document %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
     \maketitle
@@ -50,8 +62,8 @@
     \input{Sections/3_Mid.tex}
     \input{Sections/4_Long.tex}
     \input{Sections/5_Conclusion.tex}
+    
 
     \printbibliography
-    % \bibliography{ref.bib}
 
 \end{document}
