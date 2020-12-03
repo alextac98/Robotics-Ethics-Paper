@@ -8,5 +8,6 @@
 *.log
 *.run.xml
 *.synctex.gz
+*.synctex(busy)
 *.out
 *.code-workspace
